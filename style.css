@@ -20,7 +20,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  padding: 6px 12px;
+  padding: 6px 3%;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -41,7 +41,7 @@ a {
 .navbar-center ul li a {
   display: flex;
   align-items: center;
-  font-style: 14px;
+  font-size: 14px;
   margin: 5px 8px;
   padding-right: 5px;
   position: relative;
@@ -117,4 +117,133 @@ a {
   padding: 8px;
   outline: none;
   border: none;
+}
+
+/* -----------container---------- */
+.container {
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------------left-sidebar------------ */
+.left-sidebar {
+  flex-basis: 25%;
+  align-self: flex-start;
+}
+
+.sidebar-profile-box {
+  background: #fff;
+}
+
+.sidebar-profile-info {
+  padding: 0 25px;
+}
+
+.sidebar-profile-info img {
+  width: 90px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+  margin-top: -45px;
+}
+
+.sidebar-profile-info h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.sidebar-profile-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+}
+
+.sidebar-profile-info ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.sidebar-profile-info ul li {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar-profile-info ul li span {
+  color: #045be6;
+}
+.sidebar-profile-link {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.sidebar-profile-link a {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 13px;
+  border-left: 1px solid #ccc;
+}
+.sidebar-profile-link a:first-child {
+  border-left: 0;
+}
+
+.sidebar-profile-link a img {
+  width: 20px;
+  margin-right: 10px;
+}
+.sidebar-activity {
+  background: #fff;
+  padding: 5px 25px;
+  margin: 12px 0;
+}
+
+.sidebar-activity h3 {
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.sidebar-activity a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  margin: 3px 0;
+}
+.sidebar-activity a img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.discover-more-link {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.discover-more-link a {
+  color: #045be6;
+  display: inline-block;
+  margin: 10px 0;
+}
+/* --------------right-sidebar------------ */
+.right-sidebar {
+  flex-basis: 25%;
+  align-self: flex-start;
+}
+
+/* ------------------ main-content ---------------- */
+.main-content {
+  flex-basis: 47%;
 }
