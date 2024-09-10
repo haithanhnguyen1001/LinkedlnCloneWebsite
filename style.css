@@ -130,6 +130,14 @@ a {
 .left-sidebar {
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 74px;
+  height: calc(100vh - 74px);
+  overflow-y: auto;
+}
+
+.left-sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar-profile-box {
@@ -241,6 +249,8 @@ a {
 .right-sidebar {
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 73px;
 }
 
 .sidebar-news {
@@ -347,4 +357,243 @@ a {
 /* ------------------ main-content ---------------- */
 .main-content {
   flex-basis: 47%;
+}
+
+.create-post {
+  background: #fff;
+}
+
+.create-post-input {
+  padding: 20px 25px 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.create-post-input img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.create-post-input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+}
+
+.create-post-input textarea::placeholder {
+  font-weight: 500;
+}
+
+.create-post-links ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.create-post-links ul li {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 13px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+}
+.create-post-links ul li:last-child {
+  border-right: none;
+  /* border-top: none; */
+  background-color: #045be6;
+  color: #fff;
+}
+.create-post-links ul li img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.sort-by {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.sort-by hr {
+  flex: 1;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+.sort-by p {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.sort-by p span {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sort-by p span img {
+  width: 12px;
+  margin-left: 3px;
+}
+
+.post {
+  background: #fff;
+  padding: 20px 25px 5px;
+  margin: 5px 0 15px;
+}
+.post-author {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.post-author img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-author h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.post-author small {
+  display: block;
+  margin-bottom: -2px;
+}
+
+.post p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.post-stats div {
+  display: flex;
+  align-items: center;
+}
+.post-stats div img {
+  width: 15px;
+  margin-right: -5px;
+}
+.liked-users {
+  margin-left: 10px;
+}
+
+.post-activity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.post-activity div {
+  display: flex;
+  align-items: center;
+}
+.post-activity-user-icon {
+  width: 22px;
+  border-radius: 50%;
+}
+
+.post-activity-arrow-icon {
+  width: 12px;
+  margin-left: 5px;
+}
+
+.post-activity-link {
+  display: flex;
+  align-items: center;
+}
+
+.post-activity-link img {
+  width: 18px;
+  margin-right: 8px;
+}
+
+/* ------------ profile-drop-down-menu--------- */
+
+.profile-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+.profile-menu-wrap.open-menu {
+  max-height: 450px;
+}
+
+.profile-menu {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-info img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-info h3 {
+  font-weight: 500;
+  margin-bottom: -7px;
+}
+
+.user-info a {
+  color: #c9dbf8;
+  font-size: 13px;
+}
+
+.profile-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  margin: 15px 0 10px;
+}
+
+.profile-menu-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.profile-menu-link p {
+  width: 100%;
+}
+
+.profile-menu-link img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
